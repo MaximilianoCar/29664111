@@ -230,3 +230,23 @@ input[type=text]{
 input[type=submit]{
     background-color: aliceblue;
 }
+
+ /* Animacion */ 
+
+ ul.fila li {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+
+ul.fila li:hover {
+    transform: scale(1.1) rotate(5deg);
+    background-color: #99c5dd;
+}
+
+ul.fila li img, ul.fila li p.text {
+    transition: all 0.5s ease;
+}
+
+ul.fila li:hover img, ul.fila li:hover p.text {
+    transform: scale(1.1);
+}
