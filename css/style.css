@@ -1,0 +1,232 @@
+.foto{
+    position: relative;
+    left: 2%;
+    top: 15px;
+    width: 23%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;}
+
+.info{ 
+    top:15px;
+    position: absolute;
+    right: 2%;
+    width: 73%;
+    height: 95%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: rgb(164, 160, 160);
+    border: solid;
+    box-shadow: 10px 0 15px -10px rgba(0, 0, 0, 0.5), 
+        0 10px 15px -10px rgba(0, 0, 0, 0.5);}
+
+.nombre{
+    background-color: #f2c1a7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 60px;
+    line-height: 52px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contenedor{background: linear-gradient(to bottom, #e67c55 45px, #f2956b 32%, #ffe8dd);
+            position: relative;
+            margin: 0px;
+            height: 70%;
+            border-top-left-radius: 22px ;
+            border-top-right-radius: 22px ;
+            border-bottom-left-radius: 22px ;
+            border-bottom-right-radius: 22px ;}
+
+div.foto img  {width: 90%;
+    position: relative;
+    margin-bottom: 20px;
+    border-top-left-radius: 35px;}
+
+.maximiliano {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    vertical-align : middle;
+    margin: 0px;
+    left:15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 250%;
+    color:white;
+    
+}
+
+.desc{
+    font-style: italic;
+    font-size: 150%;
+}
+
+.texto{
+    border-spacing: 40px 15px;
+    position: relative;
+    left: -40px
+}
+
+.correo{
+    position: absolute;
+    bottom: -5px;
+    text-align: center;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: red;
+}
+
+.datos{
+    position: relative;
+    width: 100%;
+}
+
+        
+.perfil{
+    margin: 0;
+    height: 100%;
+}
+
+header{
+    margin: 0;
+    background-color: #87b1ef;
+}
+
+.nav{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    display: inline;
+    text-align: center;
+}
+
+nav > ul > li {
+    margin: 0;
+    background-color: #87b1ef;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo{
+    position: absolute;
+    left:0px;
+    width: 33%;
+    font-size: 200%;
+    border-right: 3px solid white;
+    z-index: 2;
+}
+
+.nombres{
+    position: absolute;
+    left: 33%;
+    width: 34%;
+    font-size: 120%;
+    border-right: 3px solid white;
+}
+
+.buscador{
+    position: absolute;
+    left: 67%;
+    width: 33%;
+    border-left: 3px solid white;
+    z-index: 2;
+}
+
+li.titulo span{
+    font-size: 40%;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0px;
+}
+
+.fila{
+    position: relative;
+    width: 90%;
+    height: 230px;
+    margin: 0px;
+    left: 5%;
+    top:0px;
+    margin-bottom: 25px;
+
+}
+
+.img{
+    position: absolute;
+    width: 23%;
+    height: 100%;
+    box-shadow: 10px 0 15px -10px rgba(0, 0, 0, 0.5), 
+        0 10px 15px -10px rgba(0, 0, 0, 0.5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #87b1ef;
+}
+
+.uno{
+   left:0px; 
+}
+
+.dos{
+    left: 25%;
+}
+
+.tres{
+    left:50%;
+}
+
+.cuatro{
+    left:75%
+}
+
+li > img{
+    top:5%;
+    width: 30%;
+    padding-top: 6%;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #87b1ef;
+    color: white;
+    bottom: 0px;
+    margin: 0px;
+}
+
+p{  
+    margin: 0px;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+}
+
+input[type=text]{
+    width: 50% ;
+}
+
+input[type=submit]{
+    background-color: aliceblue;
+}
