@@ -86,8 +86,6 @@ function ActualizarConfPerfil(configuracionActual){
           estudiantesLista.appendChild(studentListItem);
         });
 
-        //configuracion de idioma
-
         // Establecer idioma actual para index
 
         if (idiomaActual === "ES") {
