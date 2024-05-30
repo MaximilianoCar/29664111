@@ -1,0 +1,14 @@
+{
+	"nombre": "Maximiliano Carrillo",
+        "descripcion": "Soy estudiante de la escuela de computación de la Universidad Central de Venezuela, actualmente cursando: Aplicaciones con tecnologías de internet; interacción humano-computador; sistemas de información y calculo científico. Estoy interesado en la rama de las bases de datos.",
+	"color": "Naranja",
+	"libro": ["Harry Potter y el prisionero de Azkaban"],
+	"musica": ["Escucho un poco de todo, asi que no tengo un estilo de musica favorito"],
+	"video_juego": ["Genshin Impact", "Honkai Star Rail"],
+	"lenguajes": ["C++", "C", "Java", "JavaScript"],
+	"email": "maximilianoc2002@gmail.com",
+	"ci": "29664111",
+	"genero": "masculino",
+	"fecha_nacimiento": "27/09/2002",
+	"imagen": "29664111Grande.png"
+}

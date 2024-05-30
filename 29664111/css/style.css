@@ -1,25 +1,24 @@
 .foto{
-    position: relative;
-    left: 2%;
-    top: 15px;
+    margin-top: 15px;
     width: 23%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;}
 
-.info{ 
-    top:15px;
-    position: absolute;
-    right: 2%;
+.info{
+    margin-top: 15px;
+    margin-bottom: 20px;
     width: 73%;
-    height: 95%;
+    height: auto; 
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-color: rgb(164, 160, 160);
     border: solid;
     box-shadow: 10px 0 15px -10px rgba(0, 0, 0, 0.5), 
-        0 10px 15px -10px rgba(0, 0, 0, 0.5);}
+        0 10px 15px -10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;}
 
 .nombre{
+    display: flex;
     background-color: #f2c1a7;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -28,22 +27,22 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.contenedor{background: linear-gradient(to bottom, #e67c55 45px, #f2956b 32%, #ffe8dd);
-            position: relative;
-            margin: 0px;
-            height: 70%;
-            border-top-left-radius: 22px ;
-            border-top-right-radius: 22px ;
-            border-bottom-left-radius: 22px ;
-            border-bottom-right-radius: 22px ;}
+.contenedor{
+    background: linear-gradient(to bottom, #e67c55 45px, #f2956b 32%, #ffe8dd); 
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 70%;
+    border-top-left-radius: 22px ;
+    border-top-right-radius: 22px ;
+    border-bottom-left-radius: 22px ;
+    border-bottom-right-radius: 22px ;}
 
 div.foto img  {width: 90%;
-    position: relative;
     margin-bottom: 20px;
     border-top-left-radius: 35px;}
 
 .maximiliano {
-    position: relative;
     width: 100%;
     height: 100%;
     vertical-align : middle;
@@ -63,13 +62,8 @@ div.foto img  {width: 90%;
 .texto{
     border-spacing: 40px 15px;
     position: relative;
-    left: -40px
-}
-
-.correo{
-    position: absolute;
-    bottom: -5px;
-    text-align: center;
+    left: -40px;
+    font-size: 110%;
 }
 
 a {
@@ -84,6 +78,8 @@ a:hover {
 a:visited {
     color: red;
 }
+
+  
 
 .datos{
     position: relative;
@@ -107,11 +103,15 @@ header{
 
 ul{
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 li{
     display: inline;
     text-align: center;
+   
 }
 
 nav > ul > li {
@@ -124,27 +124,20 @@ nav > ul > li {
 }
 
 .titulo{
-    position: absolute;
-    left:0px;
     width: 33%;
     font-size: 200%;
-    border-right: 3px solid white;
+    border-right: 1px solid white;
     z-index: 2;
 }
 
 .nombres{
-    position: absolute;
-    left: 33%;
     width: 34%;
     font-size: 120%;
-    border-right: 3px solid white;
 }
 
 .buscador{
-    position: absolute;
-    left: 67%;
     width: 33%;
-    border-left: 3px solid white;
+    border-left: 1px solid white;
     z-index: 2;
 }
 
@@ -152,48 +145,49 @@ li.titulo span{
     font-size: 40%;
 }
 
+.index{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0%;
+}
+
 section{
-    position: absolute;
+    margin: 0px;
+    margin-top: 20px;
     width: 100%;
-    top: 80px;
-    left: 0px;
+    height: auto;
 }
 
 .fila{
-    position: relative;
-    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     height: 230px;
     margin: 0px;
-    left: 5%;
-    top:0px;
     margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    justify-items: center;
+    
+}
 
+.fila li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .img{
-    position: absolute;
+    min-width: 250px;
     width: 23%;
     height: 100%;
     box-shadow: 10px 0 15px -10px rgba(0, 0, 0, 0.5), 
         0 10px 15px -10px rgba(0, 0, 0, 0.5);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #87b1ef;
-}
-
-.uno{
-   left:0px; 
-}
-
-.dos{
-    left: 25%;
-}
-
-.tres{
-    left:50%;
-}
-
-.cuatro{
-    left:75%
 }
 
 li > img{
@@ -203,7 +197,7 @@ li > img{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -212,6 +206,8 @@ footer{
     color: white;
     bottom: 0px;
     margin: 0px;
+    order: 2;
+    align-items: flex-end;
 }
 
 p{  
@@ -250,3 +246,168 @@ ul.fila li img, ul.fila li p.text {
 ul.fila li:hover img, ul.fila li:hover p.text {
     transform: scale(1.1);
 }
+
+/* responsive */
+
+@media only screen and (max-width: 480px) {
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .foto{
+        width: 60%;
+    }
+    
+    .info {
+        width: 95%;
+    }
+
+ 
+
+    .maximiliano{
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .desc{font-size: 100%;}
+
+    .texto{
+        font-size: 90%;
+        border-spacing: 20px 8px;
+        left: -20px;}
+
+    .nombre{height: 40px;}
+
+    .nombres{
+        font-size: 70%;
+    }
+
+    .titulo{
+        font-size: 80%;
+    }
+
+    li.titulo span{
+        font-size: 20%;
+    }
+
+    .buscador{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .place{
+        width: 20%;
+    }
+
+    .boton{
+        width: 60%;
+    }
+
+    .img{
+        min-width: 150px;
+        height: 150px;
+    }
+    
+  } 
+
+
+  /* Tablets (481px - 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .foto{
+        width: 60%;
+    }
+    
+    .info {
+        width: 95%;
+    }
+
+    .maximiliano{
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .desc{font-size: 100%;}
+
+    .texto{
+        font-size: 90%;
+        border-spacing: 20px 8px;
+        left: -20px;}
+    
+
+    .nombre{height: 50px;}
+
+    .buscador{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form{
+        display: flex;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .place{
+        width: 20%;
+    }
+
+    .boton{
+        width: 60%;
+    }
+
+    .img{
+        min-width: 150px;
+        height: 150px;
+    }
+    
+  } 
+  
+  /* Small Screens/Laptops (769px - 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .desc{font-size: 100%;}
+
+    .texto{
+        font-size: 90%;
+        border-spacing: 20px 3px;
+        left: -20px;}
+
+    .info{
+        width: 70%;
+    }
+
+    .foto{
+        width: 26%;
+    }
+
+    .nombre{height: 50px;}
+    
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .texto{
+        font-size: 110%;
+    }
+  }
